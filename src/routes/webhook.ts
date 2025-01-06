@@ -27,8 +27,8 @@ export const webhook = new Elysia()
                 sig,
                 "whsec_0a46bf3ebcc6181a2e3106f34ec31e44fa40b3808bbc0147b6b6cf43357d1a96"
             );
-        } catch (err) {
-            console.error("Webhook signature verification failed:", err.message);
+        } catch  {
+            console.error("Webhook signature verification failed:");
             return error(400, "Webhook signature verification failed");
         }
 
